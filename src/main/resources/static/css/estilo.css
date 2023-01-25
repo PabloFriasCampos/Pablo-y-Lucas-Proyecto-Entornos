@@ -1,0 +1,13 @@
+body{
+  background-color: rgb(178, 165, 165);
+}
+div{
+  text-align: center;
+  background-color: rgb(255, 132, 0);
+  height: 80px;
+  line-height: 80px;
+}
+hr{
+  background-color: white;
+  height: 10px;
+}
