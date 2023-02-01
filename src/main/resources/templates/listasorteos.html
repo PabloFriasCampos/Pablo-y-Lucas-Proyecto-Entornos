@@ -32,6 +32,9 @@
       <th>
         <p>ESTADO</p>
       </th>
+      <th>
+        <p>FECHA</p>
+      </th>
     </tr>
     <tr th:each="s : ${sorteos}">
       <td>
@@ -39,6 +42,9 @@
       </td>
       <td>
         <p th:text="${s.estado}"></p>
+      </td>
+      <td>
+        <p th:text="${s.fecha}"></p>
       </td>
     </tr>
   </table>    

@@ -10,7 +10,7 @@ public class SorteoController{
 
     @GetMapping("/sorteos")
     public String displaySorteos(Model model){
-        model.addAttribute("sorteos", repositiorio.getAll())
+        model.addAttribute("sorteos", repositorio.getAll());
         return "listaSorteos";
     }
         
