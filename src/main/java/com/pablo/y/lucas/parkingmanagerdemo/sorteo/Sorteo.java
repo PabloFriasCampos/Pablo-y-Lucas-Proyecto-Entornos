@@ -1,7 +1,5 @@
 package com.pablo.y.lucas.parkingmanagerdemo.sorteo;
 
-import java.util.Date;
-
 public class Sorteo{
 
     private String fecha;
