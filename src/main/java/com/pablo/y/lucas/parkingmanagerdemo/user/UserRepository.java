@@ -13,11 +13,11 @@ public class UserRepository {
 
   public List<User> getAll(){
     usuarios.clear();
-    usuarios.add(new User("pablule@gmail.com", "pablo"));
-    usuarios.add(new User("daniel@gmail.com", "dani"));
-    usuarios.add(new User("juanito@gmail.com", "juan"));
-    usuarios.add(new User("paquirri@gmail.com", "paco"));
-    usuarios.add(new User("deivid@gmail.com", "david"));
+    usuarios.add(new User("pablule@gmail.com", "pablo","frias","campos"));
+    usuarios.add(new User("daniel@gmail.com", "dani","frias","campos"));
+    usuarios.add(new User("juanito@gmail.com", "juan","frias","campos"));
+    usuarios.add(new User("paquirri@gmail.com", "paco","frias","campos"));
+    usuarios.add(new User("deivid@gmail.com", "david","frias","campos"));
     return usuarios;
 
   }

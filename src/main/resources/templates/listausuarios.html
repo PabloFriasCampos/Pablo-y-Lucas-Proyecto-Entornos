@@ -30,12 +30,24 @@
         <p>NOMBRE</p>
       </th>
       <th>
+        <p>APELLIDO1</p>
+      </th>
+      <th>
+        <p>APELLIDO2</p>
+      </th>
+      <th>
         <p>EMAIL</p>
       </th>
     </tr>
     <tr th:each="u : ${usuarios}">
       <td>
         <p th:text="${u.nombre}"></p>
+      </td>
+      <td>
+        <p th:text="${u.apellido1}"></p>
+      </td>
+      <td>
+        <p th:text="${u.apellido2}"></p>
       </td>
       <td>
         <p th:text="${u.email}"></p>
