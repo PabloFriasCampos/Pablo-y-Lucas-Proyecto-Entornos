@@ -23,34 +23,22 @@
   </style>
 </head>
 <body>
-  <h1>Lista de usuarios:</h1>
+  <h1>Lista de sorteos:</h1>
   <table border="1px">
     <tr>
       <th>
-        <p>NOMBRE</p>
+        <p>DESCRIPCION</p>
       </th>
       <th>
-        <p>APELLIDO1</p>
-      </th>
-      <th>
-        <p>APELLIDO2</p>
-      </th>
-      <th>
-        <p>EMAIL</p>
+        <p>ESTADO</p>
       </th>
     </tr>
-    <tr th:each="u : ${usuarios}">
+    <tr th:each="s : ${sorteos}">
       <td>
-        <p th:text="${u.nombre}"></p>
+        <p th:text="${s.descripcion}"></p>
       </td>
       <td>
-        <p th:text="${u.apellido1}"></p>
-      </td>
-      <td>
-        <p th:text="${u.apellido2}"></p>
-      </td>
-      <td>
-        <p th:text="${u.email}"></p>
+        <p th:text="${s.estado}"></p>
       </td>
     </tr>
   </table>    

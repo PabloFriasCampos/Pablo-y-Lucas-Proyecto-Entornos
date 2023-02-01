@@ -6,7 +6,7 @@ public class Sorteo{
     private String descripcion;
     private String estado;
 
-    public Sorteo(String fecha, String descripcion, String estado;){
+    public Sorteo(String fecha, String descripcion, String estado){
         this.fecha = fecha;
         this.descripcion = descripcion;
         this.estado = estado;
@@ -14,7 +14,7 @@ public class Sorteo{
     public String getFecha(){
         return fecha;
     }
-    public void setFecha(String Fecha){
+    public void setFecha(String fecha){
         this.fecha = fecha;
     }
     public String getDescripcion(){
