@@ -1,17 +1,34 @@
 package com.pablo.y.lucas.parkingmanagerdemo.user;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class User {
-  //private long id;
+
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  private long id;
   private String email;
   private String nombre;
   private String apellido1;
   private String apellido2;
+  
+  public User() {
+  }
+
 
   public User(String email, String nombre, String apellido1, String apellido2) {
     this.email = email;
     this.nombre = nombre;
     this.apellido1 = apellido1;
     this.apellido2 = apellido2;
+  }
+
+  public long getId() {
+    return id;
   }
 
   public String getEmail() {

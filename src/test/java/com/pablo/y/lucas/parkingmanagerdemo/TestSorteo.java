@@ -18,9 +18,20 @@ public class TestSorteo {
   }
 
   @Test
+  public void check_user_id(){
+
+    long actual = sorteo.getId();
+
+    assertEquals(sorteo.getId(), actual);
+
+  }
+
+  @Test
   public void check_sorteo_fecha(){
 
-    String expected = "fecha";
+    String expected = "fecha1";
+
+    sorteo.setFecha(expected);
 
     String actual = sorteo.getFecha();
 
@@ -31,7 +42,9 @@ public class TestSorteo {
   @Test
   public void check_sorteo_descripcion(){
 
-    String expected = "descripcion";
+    String expected = "descripcion1";
+
+    sorteo.setDescripcion(expected);
 
     String actual = sorteo.getDescripcion();
 
@@ -42,7 +55,9 @@ public class TestSorteo {
   @Test
   public void check_sorteo_estado(){
 
-    String expected = "estado";
+    String expected = "estado1";
+
+    sorteo.setEstado(expected);
 
     String actual = sorteo.getEstado();
 

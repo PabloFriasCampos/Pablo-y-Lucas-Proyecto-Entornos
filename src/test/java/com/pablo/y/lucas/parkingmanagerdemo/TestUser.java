@@ -18,9 +18,20 @@ public class TestUser {
   }
 
   @Test
+  public void check_user_id(){
+
+    long actual = user.getId();
+
+    assertEquals(user.getId(), actual);
+
+  }
+
+  @Test
   public void check_user_nombre(){
 
-    String expected = "nombre";
+    String expected = "nombre1";
+
+    user.setNombre(expected);
 
     String actual = user.getNombre();
 
@@ -31,7 +42,9 @@ public class TestUser {
   @Test
   public void check_user_email(){
 
-    String expected = "email";
+    String expected = "email1";
+
+    user.setEmail(expected);
 
     String actual = user.getEmail();
 
@@ -42,7 +55,9 @@ public class TestUser {
   @Test
   public void check_user_apellido1(){
 
-    String expected = "apellido1";
+    String expected = "apellido11";
+
+    user.setApellido1	(expected);
 
     String actual = user.getApellido1();
 
@@ -53,7 +68,9 @@ public class TestUser {
   @Test
   public void check_user_apellido2(){
 
-    String expected = "apellido2";
+    String expected = "apellido21";
+
+    user.setApellido2(expected);
 
     String actual = user.getApellido2();
 

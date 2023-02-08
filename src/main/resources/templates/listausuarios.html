@@ -27,6 +27,9 @@
   <table border="1px">
     <tr>
       <th>
+        <p>ID</p>
+      </th>
+      <th>
         <p>NOMBRE</p>
       </th>
       <th>
@@ -40,6 +43,9 @@
       </th>
     </tr>
     <tr th:each="u : ${usuarios}">
+      <td>
+        <p th:text="${u.id}"></p>
+      </td>
       <td>
         <p th:text="${u.nombre}"></p>
       </td>

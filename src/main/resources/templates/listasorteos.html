@@ -26,6 +26,11 @@
   <h1>Lista de sorteos:</h1>
   <table border="1px">
     <tr>
+      
+      <th>
+        <p>ID</p>
+      </th>
+      
       <th>
         <p>DESCRIPCION</p>
       </th>
@@ -37,6 +42,9 @@
       </th>
     </tr>
     <tr th:each="s : ${sorteos}">
+      <td>
+        <p th:text=${s.id}></p>
+      </td>
       <td>
         <p th:text="${s.descripcion}"></p>
       </td>
