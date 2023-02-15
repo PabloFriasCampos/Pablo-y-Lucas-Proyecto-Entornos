@@ -8,7 +8,7 @@
   <style>
     table{
       border: solid 2px rgb(255, 132, 0);
-      width: 700px;
+      width: 300px;
       text-align: center;
       margin-left: auto;
       margin-right: auto;
@@ -17,12 +17,78 @@
     body{
       background-color: rgb(178, 165, 165);
     }
-    h1{
+    h1,h2{
       text-align: center;
     }
   </style>
 </head>
 <body>
   <h1>Crear nuevo usuarios</h1>
+  <h2>Introduzca su información de usuario:</h2>
+  <form method="post">
+    <table border="1px">
+        <tr>
+            <th>
+                <p>ID</p>
+            </th>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <p>NOMBRE</p>
+            </th>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <p>1º APELLIDO</p>
+            </th>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <p>2º APELLIDO</p>
+            </th>
+            <td>
+                <input type="text" placeholder="">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <p>EMAIL</p>
+            </th>
+            <td>
+                <input type="email" placeholder="@">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <p>CONTRASEÑA</p>
+            </th>
+            <td>
+                <input type="password" placeholder="********">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <p>REPITA CONTRASEÑA</p>
+            </th>
+            <td>
+                <input type="password" placeholder="********">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Confirmar">
+            </td>
+        </tr>
+    </table>
+  </form>
 </body>
 </html>
