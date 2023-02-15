@@ -18,4 +18,9 @@ public class UserController {
 
   }
 
+  @GetMapping("/nuevoUsuario")
+  public String showUserCreateForm(Model model){
+    return "nuevoFormularioDeUsuario";
+  }
+
 }
