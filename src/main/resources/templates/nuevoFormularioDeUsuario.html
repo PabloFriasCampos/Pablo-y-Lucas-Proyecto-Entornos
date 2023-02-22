@@ -25,22 +25,14 @@
 <body>
   <h1>Crear nuevo usuarios</h1>
   <h2>Introduzca su información de usuario:</h2>
-  <form method="post">
+  <form action="#" th:action="nuevoFormularioDeUsuario" method="post" th:object="${usuarios}">
     <table border="1px">
-        <tr>
-            <th>
-                <p>ID</p>
-            </th>
-            <td>
-                <input type="text">
-            </td>
-        </tr>
         <tr>
             <th>
                 <p>NOMBRE</p>
             </th>
             <td>
-                <input type="text">
+                <input th:field="*{nombre}" type="text">
             </td>
         </tr>
         <tr>
@@ -48,7 +40,7 @@
                 <p>1º APELLIDO</p>
             </th>
             <td>
-                <input type="text">
+                <input th:field="*{apellido1}" type="text">
             </td>
         </tr>
         <tr>
@@ -56,36 +48,20 @@
                 <p>2º APELLIDO</p>
             </th>
             <td>
-                <input type="text" placeholder="">
+                <input th:field="*{apellido2}" type="text" placeholder="">
             </td>
         </tr>
         <tr>
             <th>
-                <p>EMAIL</p>
+                <label>EMAIL</label>
             </th>
             <td>
-                <input type="email" placeholder="@">
-            </td>
-        </tr>
-        <tr>
-            <th>
-                <p>CONTRASEÑA</p>
-            </th>
-            <td>
-                <input type="password" placeholder="********">
-            </td>
-        </tr>
-        <tr>
-            <th>
-                <p>REPITA CONTRASEÑA</p>
-            </th>
-            <td>
-                <input type="password" placeholder="********">
+                <input th:field="*{email}" type="email" placeholder="@">
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <input type="submit" value="Confirmar">
+                <button type="submit">Confirmar</button>
             </td>
         </tr>
     </table>
